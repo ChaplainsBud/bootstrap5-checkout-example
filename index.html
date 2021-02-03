@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TOEFL lessons checkout</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,8 +11,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/icons" />
   </head>
-  <body class="bg-light" cz-shortcut-listen="true">
+  <body class="bg-dark" cz-shortcut-listen="true">
     <div id="StayFocusd-infobar" style="display: none; top: 0px">
       <img
         src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png"
@@ -35,8 +36,38 @@
             width="72"
             height="57"
           /> -->
+          <!-- <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-alarm-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
+            />
+          </svg> -->
+          <h2>
+            Checkout form
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bag"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+              />
+            </svg>
+          </h2>
+          <!-- <svg class="bi" width="32" height="32" fill="currentColor">
+            <use xlink:href="bootstrap-icons.svg#heart-fill" />
+          </svg>
+          <img src="./img/alarm-fill.svg" width="100" alt="alarm-fill" /> -->
 
-          <h2>Checkout form</h2>
           <p class="lead">I find the margins Bootstrap provides to be cool.</p>
         </div>
 
@@ -44,26 +75,28 @@
           <div class="col-md-5 col-lg-4 order-md-last">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
               <span class="text-muted">Your cart</span>
-              <span class="badge bg-secondary rounded-pill">3</span>
+              <span class="badge bg-secondary rounded-pill"
+                >What's this doing here?</span
+              >
             </h4>
             <ul class="list-group mb-3">
               <li class="list-group-item d-flex justify-content-between lh-sm">
                 <div>
-                  <h6 class="my-0">Product name</h6>
+                  <h6 class="my-0">TOEFL Reading</h6>
                   <small class="text-muted">Brief description</small>
                 </div>
                 <span class="text-muted">$12</span>
               </li>
               <li class="list-group-item d-flex justify-content-between lh-sm">
                 <div>
-                  <h6 class="my-0">Second product</h6>
+                  <h6 class="my-0">Accent Reduction</h6>
                   <small class="text-muted">Brief description</small>
                 </div>
                 <span class="text-muted">$8</span>
               </li>
               <li class="list-group-item d-flex justify-content-between lh-sm">
                 <div>
-                  <h6 class="my-0">Third item</h6>
+                  <h6 class="my-0">SAT Reading</h6>
                   <small class="text-muted">Brief description</small>
                 </div>
                 <span class="text-muted">$5</span>
@@ -94,6 +127,7 @@
               </div>
             </form>
           </div>
+          <!-- This second column ends up the left one due to 'order' -->
           <div class="col-md-7 col-lg-8">
             <h4 class="mb-3">Billing address</h4>
             <form class="needs-validation" novalidate="">
@@ -202,6 +236,7 @@
                   <select class="form-select" id="state" required="">
                     <option value="">Choose...</option>
                     <option>California</option>
+                    <option>Maryland</option>
                   </select>
                   <div class="invalid-feedback">
                     Please provide a valid state.
